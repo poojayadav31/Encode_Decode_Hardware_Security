@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encryption Result</title>
+</head>
+<body>
+    <h2>Encryption Result</h2>
+    <p>IV: {{ iv }}</p>
+    <p>Ciphertext: {{ ciphertext }}</p>
+    <a href="{% url 'encrypt' %}">Encrypt another</a>
+</body>
+</html>

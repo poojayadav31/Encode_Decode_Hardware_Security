@@ -1,0 +1,252 @@
+.header {
+    width: 100%;
+    background-color: #0d0138;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 25px;
+    background-color: #0d0138;
+}
+
+.header-cspdcllogo {
+    height: 40px;
+}
+
+.header-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-social-icons svg {
+    color: white;
+    font-size: 24px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: white;
+    color: black;
+}
+
+.header-encodeco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-encodeco-logo {
+    height: 100px;
+}
+
+.header-encodeco-text h1 {
+    font-size: 26px;
+    margin: 0;
+    color: #0d0138;
+}
+
+.header-encodeco-text p {
+    font-size: 22px;
+    margin: 0;
+    color: #0d0138;
+}
+
+.header-nav-links {
+    display: flex;
+    gap: 30px;
+    transition: max-height 0.3s ease-out;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.header-nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header-login-btn {
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15%;
+}
+
+.header-login-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ensure that the link itself has no underline */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.header-user-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-username {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.header-user-icon {
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-user-menu {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    right: 0;
+    text-align: left;
+    justify-content: left;
+    background: white;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+}
+
+.header-user-section:hover .header-user-menu,
+.header-user-section:focus .header-user-menu,
+.header-user-icon:focus+.header-user-menu {
+    display: block;
+}
+
+.header-user-menu button {
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: left;
+    justify-content: left;
+}
+
+.header-user-menu button:hover {
+    background: none;
+    border: none;
+    color: #2542e9;
+    cursor: pointer;
+}
+
+.header-nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-right-section {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.header-scroll-div {
+    overflow: hidden;
+    position: relative;
+    height: 23px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.header-scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    /* Start the text outside the right edge of the container */
+    will-change: transform;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        /* Start from the right */
+    }
+
+    100% {
+        transform: translateX(-200%);
+        /* Move to the left, outside the container */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-encodeco-logo {
+        height: 80px;
+    }
+
+    .header-encodeco {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-right-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .header-nav-links {
+        flex-direction: column;
+        gap: 10px;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .header-username {
+        display: block;
+    }
+
+    .header-nav-links.open {
+        max-height: 300px;
+    }
+
+    .header-nav-toggle {
+        display: block;
+    }
+
+    .header-login-btn {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}

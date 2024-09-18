@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encryption</title>
+</head>
+<body>
+    <h2>Encryption</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="key">Key:</label><br>
+        <input type="text" id="key" name="key" required><br>
+        <label for="plaintext">Plaintext:</label><br>
+        <input type="text" id="plaintext" name="plaintext" required><br>
+        <input type="submit" value="Encrypt">
+    </form>
+</body>
+</html>

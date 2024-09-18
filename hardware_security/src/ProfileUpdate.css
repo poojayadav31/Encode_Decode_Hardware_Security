@@ -1,0 +1,92 @@
+.profileupdate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.profileupdate-form-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.522);
+  width: 400px;
+}
+
+.profileupdate-form-group {
+  margin-bottom: 20px;
+}
+
+.profileupdate-form-group label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.profileupdate-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileupdate-input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 16px;
+}
+
+.profileupdate-btn-verify1 {
+  width: 28%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.profileupdate-btn-verify2 {
+  width: 28%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.profileupdate-btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profileupdate-btn-primary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.profileupdate-btn-secondary {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+

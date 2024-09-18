@@ -1,0 +1,84 @@
+.feedback-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+}
+
+.feedback-form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.522);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.feedback-form-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.feedback-form-group {
+    margin-bottom: 20px;
+}
+
+.feedback-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+    text-align: left;
+}
+
+.feedback-form-group input,
+.feedback-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.feedback-form-group input:focus,
+.feedback-form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.feedback-form-buttons-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-form-btn-submit,
+.feedback-form-btn-reset {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form-btn-submit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.feedback-form-btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.feedback-form-btn-reset {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.feedback-form-btn-reset:hover {
+    background-color: #5a6268;
+}

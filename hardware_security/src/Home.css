@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-bgdiv {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.background {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-home {
+    position: relative;
+}
+
+.home-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.home-AES {
+    font-size: 8em;
+    margin: 0;
+}
+
+.home-h3 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.home-p1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+  
+@media (max-width: 1024px) {
+    .home-AES {
+        font-size: 6em;
+    }
+
+    .home-h3 {
+        font-size: 4em;
+    }
+
+    .home-p1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-AES {
+        font-size: 4em;
+    }
+
+    .home-h3 {
+        font-size: 3em;
+    }
+
+    .home-p1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-AES {
+        font-size: 3em;
+    }
+
+    .home-h3 {
+        font-size: 2em;
+    }
+
+    .home-p1 {
+        font-size: 1em;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+.web_animate {
+    font-size: xx-large;
+    text-align: center;
+    color: hsl(39, 100%, 50%);
+    font-family: "Artifika", serif;
+    font-weight: 400;
+    font-style: normal;
+}

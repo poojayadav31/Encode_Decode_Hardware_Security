@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decryption</title>
+</head>
+<body>
+    <h2>Decryption</h2>
+    <form method="post">
+        {% csrf_token %}
+        Key: <input type="text" name="key"><br><br>
+        IV: <input type="text" name="iv"><br><br>
+        Ciphertext: <input type="text" name="ciphertext"><br><br>
+        <input type="submit" value="Decrypt">
+    </form>
+</body>
+</html>
